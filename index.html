@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Quiz App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+  <!-- section for registered -->
+  <section id="homeSection">
+    <h1>JavaScript Quiz</h1>
+    <p class="describe">Évaluez vos connaissances en JavaScript en répondant aux questions que nous avons spécialement
+      sélectionnées
+      pour vous. <br>
+      C'est fun et c'est gratuit. </p>
+    <form action="#" id="form">
+
+      <p class="fieldsFrom">Name :</p>
+      <input type="text" id="name" class="input-data">
+      <p class="errorname" >N’oubliez pas de renseigner votre nom avant de commencer le Quiz.</p>
+
+      <p class="fieldsFrom">Email :</p>
+      <input type="email" id="email" class="input-data"><br>
+       <p class="errormail">N’oubliez pas de renseigner votre email avant de commencer le Quiz.</p>
+      <input type="submit" value="Commencer" class="commencer">
+    </form>
+  </section>
+  <div id="question-bloc">
+  <!-- section for first question -->
+  <section class="section-question" id="first-section">
+    <p class="question">Quel est le type d'un fichier JavaScript?</p>
+    <p class="questions">Question 1/15</p>
+    <div class="text">
+      <span>60</span>
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+
+
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value=".jsx" id="input-radio">  .jsx</li>
+        <li><input type="radio" name="answer" value=".js">  .js</li>
+        <li><input type="radio" name="answer" value=".java">  .java</li>
+        <li><input type="radio" name="answer" value=".html">  .html</li>
+      </ul>
+      <button type="button" class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant1" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+  <!-- section for second question -->
+  <section id="two-section" class="section-question">
+    <p class="question">Comment faire appelle à une fonction nommée « sum »?</p>
+    <p class="questions">Question 2/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+
+
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="sum()">  sum()</li>
+        <li><input type="radio" name="answer" value="call sum()">  call sum()</li>
+        <li><input type="radio" name="answer" value="call function sum()">  call function sum()</li>
+        <li><input type="radio" name="answer" value="return sum">  return sum</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant2" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+
+  <!-- section for third question -->
+  <section id="third-section" class="section-question">
+    <p class="question">Dans quel balise HTML plaçons-nous le code JavaScript?</p>
+    <p class="questions">Question 3/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+
+
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="js">  js</li>
+        <li><input type="radio" name="answer" value="javascript">  javascript</li>
+        <li><input type="radio" name="answer" value="script">  script</li>
+        <li><input type="radio" name="answer" value="rel">  rel</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant3" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+  <!-- section for four question -->
+  <section id="four-section" class="section-question">
+    <p class="question">Quelle fonction procède l’inverse de split() ?</p>
+    <p class="questions">Question 4/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+
+
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="append()">  append()</li>
+        <li><input type="radio" name="answer" value=" unite()">  unite()</li>
+        <li><input type="radio" name="answer" value="join()">  join()</li>
+        <li><input type="radio" name="answer" value="concat()">  concat()</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant4" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+  <!-- section for five question -->
+  <section id="five-section" class="section-question">
+    <p class="question">Quel est le bon endroit pour insérer un code JavaScript?</p>
+    <p class="questions">Question 5/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="head">  La section head</li>
+        <li><input type="radio" name="answer" value="body">  la section body</li>
+        <li><input type="radio" name="answer" value="html">  la section html</li>
+        <li><input type="radio" name="answer" value="script">  la section script</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant5" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+
+  <!-- six section -->
+  <section id="six-section" class="section-question">
+    <p class="question">Comment pouvez-vous ajouter un commentaire dans un code JavaScript?</p>
+    <p class="questions">Question 6/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="//Ceci est un commentaire">  //Ceci est un commentaire</li>
+        <li><input type="radio" name="answer" value='"Ceci est un commentaire"'>  "Ceci est un commentaire"</li>
+        <li><input type="radio" name="answer" value="#Ceci est un commentaire">  #Ceci est un commentaire</li>
+        <li><input type="radio" name="answer" value="/Ceci est un commentaire|">  /Ceci est un commentaire|</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant6" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+  <!-- seven section -->
+  <section id="seven-section" class="section-question">
+    <p class="question"> JavaScript est identique à Java?</p>
+    <p class="questions">Question 7/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="vrai">  Vrai</li>
+        <li><input type="radio" name="answer" value="faux">  Faux</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant7" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+  <!-- eight section -->
+  <section id="eight-section" class="section-question">
+    <p class="question"> Quelle est la syntaxe correct de la boucle while?</p>
+    <p class="questions">Question 8/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="while (i <= 5)">  while (i <= 5)</li>
+        <li><input type="radio" name="answer" value="while i = 1 to 5">  while i = 1 to 5</li>
+        <li><input type="radio" name="answer" value="while (i <= 5; i++)">  while (i <= 5; i++)</li>
+        <li><input type="radio" name="answer" value="while (i=0; i <= 5; i++)">  while (i=0; i <= 5; i++)</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant8" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+  <!-- nine section -->
+  <section id="nine-section" class="section-question">
+    <p class="question">Comment déclarer un tableau « tab » de 10 éléments ?</p>
+    <p class="questions">Question 9/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="tab = new Array(10)">  tab = new Array(10)</li>
+        <li><input type="radio" name="answer" value="let tab[10]">  let tab[10]</li>
+        <li><input type="radio" name="answer" value="var tab = array(10)">  var tab = array(10)</li>
+        <li><input type="radio" name="answer" value="const tab(10)">  const tab(10)</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant9" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+  <!-- ten section -->
+  <section id="ten-section" class="section-question">
+    <p class="question">Combien de paramètres peuvent être passés à une fonction?</p>
+    <p class="questions">Question 10/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="aucune">  Aucune</li>
+        <li><input type="radio" name="answer" value="Autant que vous voulez">  Autant que vous voulez</li>
+        <li><input type="radio" name="answer" value="Un pour chaque argument">  Un pour chaque argument</li>
+        <li><input type="radio" name="answer" value="un">  Un</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant10" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+  <!-- eleven section -->
+  <section id="eleven-section" class="section-question">
+    <p class="question">Si str = "VWXYZ", que retourne str.charAt(3)?</p>
+    <p class="questions">Question 11/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="X">  X</li>
+        <li><input type="radio" name="answer" value="Y">  Y</li>
+        <li><input type="radio" name="answer" value="Z">  Z</li>
+        <li><input type="radio" name="answer" value="false">  false</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant11" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+  <!-- tweleve section -->
+  <section id="twelve-section" class="section-question">
+    <p class="question"> Quel événement est spécifique au clavier?</p>
+    <p class="questions">Question 12/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+
+
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="keypress">  keypress</li>
+        <li><input type="radio" name="answer" value="keydown">  keydown</li>
+        <li><input type="radio" name="answer" value="click">  click</li>
+        <li><input type="radio" name="answer" value="onfocus">  onfocus</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant12" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+  <!-- thirteen -->
+  <section id="thirteen-section" class="section-question">
+    <p class="question">Quelle est la sortie de cette ligne : String.fromCharCode(65) ?</p>
+    <p class="questions">Question 13/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="1">  1</li>
+        <li><input type="radio" name="answer" value="A">  A</li>
+        <li><input type="radio" name="answer" value="erreur">  erreur</li>
+        <li><input type="radio" name="answer" value="false">  false</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant13" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+  <!-- fourteen section -->
+  <section id="fourteen-section" class="section-question">
+    <p class="question">  Quelle déclaration fournit la valeur d'une fonction?</p>
+    <p class="questions">  Question 14/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="return">  return</li>
+        <li><input type="radio" name="answer" value="cancel">  cancel</li>
+        <li><input type="radio" name="answer" value="continue">  continue</li>
+        <li><input type="radio" name="answer" value="valueOf">  valueOf</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant14" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+  <!-- fifteen section -->
+  <section id="fifteen-section" class="section-question">
+    <p class="question">Quelle méthode renvoie le caractère à l’index spécifié?</p>
+    <p class="questions">Question 15/15</p>
+    <div class="text">
+      60
+    </div>
+    <div class="outerbar">
+      <div class="innerbar">
+      </div>
+    </div>
+    <div class="answers">
+      <ul class="radio-group">
+        <li><input type="radio" name="answer" value="characterAt()">  characterAt()</li>
+        <li><input type="radio" name="answer" value="getCharAt()">  getCharAt()</li>
+        <li><input type="radio" name="answer" value="charAt()">  charAt()</li>
+        <li><input type="radio" name="answer" value="indexof">  indexof</li>
+      </ul>
+      <button class="btn-quitter">Quitter</button>
+      <button type="submit" id="btn-suivant15" class="suivant" disabled>Suivant</button>
+    </div>
+  </section>
+  </div>
+  <!-- success section -->
+  <section id="success-section" class="section-question">
+    <h2 id="nameSucces"></h2>
+    <p class="printEmail" id="emailSucces"></p>
+    <span class="relative">
+      <svg width="154" height="154" viewBox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M77 0.875C34.9613 0.875 0.875 34.9613 0.875 77C0.875 119.039 34.9613 153.125 77 153.125C119.039 153.125 153.125 119.039 153.125 77C153.125 34.9613 119.039 0.875 77 0.875ZM77 140.211C42.098 140.211 13.7891 111.902 13.7891 77C13.7891 42.098 42.098 13.7891 77 13.7891C111.902 13.7891 140.211 42.098 140.211 77C140.211 111.902 111.902 140.211 77 140.211Z"
+          fill="#028A3D" />
+      </svg>
+      <span class="absolute">
+        <svg class="succes" width="68" height="56" viewBox="0 0 68 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M65.7756 0.984375H57.8062C56.073 0.984375 54.4248 1.81699 53.4053 3.24433L26.6936 40.2873L14.5951 23.499C13.5756 22.0887 11.9443 21.2391 10.1941 21.2391H2.22481C1.12032 21.2391 0.474613 22.4965 1.12032 23.3971L22.2926 52.7596C22.7927 53.4577 23.4521 54.0265 24.216 54.4189C24.9799 54.8113 25.8263 55.016 26.6851 55.016C27.5438 55.016 28.3903 54.8113 29.1541 54.4189C29.918 54.0265 30.5774 53.4577 31.0775 52.7596L66.8631 3.14238C67.5258 2.2418 66.8801 0.984375 65.7756 0.984375V0.984375Z"
+            fill="#028A3D" />
+        </svg>
+      </span>
+    </span>
+    
+    
+    <p id="printScore"></p>
+    <button class="btn-accueil" id="btn-accueilSucces">Acceuil</button>
+
+  </section>
+   <!-- fail section -->
+   <section id="fail-section" class="section-question">
+    <h2 id="nameFail"></h2>
+    <p class="printEmail" id="emailFail"></p>
+    <span class="relative">
+      <svg width="154" height="153" viewBox="0 0 154 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M77 0.046875C34.9613 0.046875 0.875 34.1332 0.875 76.1719C0.875 118.211 34.9613 152.297 77 152.297C119.039 152.297 153.125 118.211 153.125 76.1719C153.125 34.1332 119.039 0.046875 77 0.046875ZM77 139.383C42.098 139.383 13.7891 111.074 13.7891 76.1719C13.7891 41.2699 42.098 12.9609 77 12.9609C111.902 12.9609 140.211 41.2699 140.211 76.1719C140.211 111.074 111.902 139.383 77 139.383Z" fill="#FF3838"/>
+      </svg>  
+      <span class="absolute">
+        <svg class="succes" width="60" height="59" viewBox="0 0 60 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M59.4641 2.28906C59.4641 1.54141 58.8523 0.929688 58.1047 0.929688L46.8898 0.980667L29.9996 21.1164L13.1264 0.99766L1.89453 0.946681C1.14687 0.946681 0.535156 1.54141 0.535156 2.30606C0.535156 2.62891 0.654101 2.93477 0.858007 3.18965L22.9648 29.5275L0.858007 55.8484C0.652679 56.0975 0.538752 56.4093 0.535156 56.732C0.535156 57.4797 1.14687 58.0914 1.89453 58.0914L13.1264 58.0404L29.9996 37.9047L46.8728 58.0234L58.0877 58.0744C58.8354 58.0744 59.4471 57.4797 59.4471 56.715C59.4471 56.3922 59.3281 56.0863 59.1242 55.8315L37.0514 29.5105L59.1582 3.17266C59.3621 2.93477 59.4641 2.61191 59.4641 2.28906Z" fill="#FF3838"/>
+        </svg>
+      </span> 
+    </span>  
+
+        
+    <p id="printScoreFail"></p>
+    <button class="btn-accueil" id="btn-accueilFail">Acceuil</button>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
