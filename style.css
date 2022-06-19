@@ -296,7 +296,7 @@ color: #555555;
 
 /* For tablette */
 
-@media (min-width: 1025px) and (max-width: 1240px) {
+@media all and (min-width: 1025px) and (max-width: 1240px) {
   #homeSection {
     width: 50%;
   }
@@ -389,7 +389,7 @@ color: #555555;
 
 /* For tablette */
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media all and (min-width: 769px) and (max-width: 1024px) {
   #homeSection {
     width: 60%;
   }
@@ -479,7 +479,7 @@ color: #555555;
 
 /* For mobile phones: */
 
-@media only screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
 
   #homeSection {
     width: 70%;
@@ -569,7 +569,7 @@ color: #555555;
 
 /* for mobile */
 
-@media only screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
 
   #homeSection {
     width: 90%;
